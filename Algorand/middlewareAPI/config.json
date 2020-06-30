@@ -1,0 +1,26 @@
+{
+  "certificates" : {
+    "AzureSphereRoot" : "./certificates/CA-cert-chain.pem",
+    "LocalCA" : "./certificates/ca-crt.pem",
+    "middlewareAPI" : "./certificates/server-crt.pem",
+    "middlewareAPIKey" : "./certificates/server-key.pem"
+  },
+  "algorand" : {
+      "algorandIP" : "127.0.0.1",
+      "token" : "../algorandNetwork/tokenToConnect.txt",
+      "port" : "../algorandNetwork/portToConnect.txt"
+  },
+  "mnemonic" : {
+      "energyCompanyAccount" : "../algorandNetwork/mnemonicRECAggregator.txt"
+  },
+  "private_key" : "keys/prvKey",
+  "auth_devices" : [{
+    "id" : "client1",
+    "owner": "",
+    "ownerLocation" : "../algorandNetwork/ownerAddr.txt"
+  }, {
+    "id" : "c757e931a43a8c54123a73616aa8763cccad474f68d7659de7bb667a51f19fb2abce56ee977e55796498a4787563a3ea68b78f67336d0884f7dbfb9480d9eadc",
+    "owner": "",
+    "ownerLocation" : "../algorandNetwork/ownerAddr.txt"
+  }]
+}

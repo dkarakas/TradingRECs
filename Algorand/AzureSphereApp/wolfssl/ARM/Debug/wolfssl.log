@@ -1,0 +1,1 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Application Type\Linux\1.0\AzureSphere.targets(42,5): error : Development of Azure Sphere applications using .vcxproj is no longer supported. Please visit https://aka.ms/AA76dyz for information about converting existing .vcxproj projects to CMake.

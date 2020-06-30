@@ -1,0 +1,14 @@
+{
+  "SchemaVersion": 1,
+  "Name": "HTTPS_Curl_Multi",
+  "ComponentId": "ace2be54-d439-4d24-a78c-11c728f1c4f2",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [ "0ne00072331" ],
+  "Capabilities": {
+    "AllowedConnections": [ "httpstat.us", "192.168.43.242", "mutualauthtest.azurewebsites.net", "global.azure-devices-provisioning.net", "SiriusIoTHub.azure-devices.net" ],
+    "Gpio": [ "$SAMPLE_LED", "$SAMPLE_BUTTON_1", "$SAMPLE_BUTTON_2" ],
+    "DeviceAuthentication": "6369e0c6-2dc5-4748-b7cb-c141606deda3",
+    "MutableStorage": { "SizeKB": 1 }
+  },
+  "ApplicationType": "Default"
+}

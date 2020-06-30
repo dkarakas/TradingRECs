@@ -1,0 +1,3 @@
+ Show certificate details:
+    openssl x509 -in rootCA.pem -text
+    openssl pkcs7 -inform DER -outform PEM -in CA-cert-chain.p7b -print_certs > CA-cert-chain.pem - Convert the p5b to pem format which is expected by our app 

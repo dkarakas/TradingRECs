@@ -1,0 +1,12 @@
+{
+  "buyer": {
+    "mnemonicLocation": "../algorandNetwork/mnemonicBuyer.txt"
+  },
+  "seller": {
+    "mnemonicLocation": "../algorandNetwork/mnemonicSeller.txt"
+  },
+  "certificates" : {
+    "AzureSphereRoot" : "../middlewareAPI/certificates/CA-cert-chain.pem",
+    "LocalCA" : "../middlewareAPI/certificates/ca-crt.pem"
+  }
+}
