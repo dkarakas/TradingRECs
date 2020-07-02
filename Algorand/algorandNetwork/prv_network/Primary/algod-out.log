@@ -1,5 +1,0 @@
-No REST API Token found. Generated token: e78f69caa3112e99edef4a7e22009c31952087147c258360f133f7e08002a361
-Logging to:  /home/dzkaraka/Desktop/workdir/RECTradingCleaned/RECTrading/Algorand/algorandNetwork/prv_network/Primary/node.log
-Deadlock detection is set to: disabled (Default state is 'disable')
-Initializing the Algorand node... Success!
-Node running and accepting RPC requests over HTTP on port 127.0.0.1:8080. Press Ctrl-C to exit
