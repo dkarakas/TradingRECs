@@ -1,0 +1,46 @@
+﻿  main.c: In function 'SendMessageToIoTHub':
+main.c(275,30): warning :  unknown escape sequence: '\}'
+main.c(275,30): warning :          AzureIoT_SendMessage("{\"smartMeter\":\"SM1\",\"meterreading\":\"100000\",\"timestamp\":\"Time\"\}");
+main.c(275,30): warning :                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(275,30): warning : main.c: In function 'SocketEventHandler':
+main.c(313,16): warning :  unknown escape sequence: '\}'
+main.c(313,16): warning :    strcat(buff, "\",\"timestamp\":\"Time\"\}");
+main.c(313,16): warning :                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(313,16): warning : main.c: At top level:
+main.c(46,12): warning :  'InitHandlers' declared 'static' but never defined [-Wunused-function]
+main.c(46,12): warning :  static int InitHandlers(void);
+main.c(46,12): warning :             ^~~~~~~~~~~~
+main.c(47,13): warning :  'CloseHandlers' declared 'static' but never defined [-Wunused-function]
+main.c(47,13): warning :  static void CloseHandlers(void);
+main.c(47,13): warning :              ^~~~~~~~~~~~~
+main.c(271,13): warning :  'SendMessageToIoTHub' defined but not used [-Wunused-function]
+main.c(271,13): warning :  static void SendMessageToIoTHub(void)
+main.c(271,13): warning :              ^~~~~~~~~~~~~~~~~~~
+  Azure Sphere Utility version 19.5.4.53731
+  Copyright (C) Microsoft Corporation. All rights reserved.
+   
+  Start time (UTC): Tuesday, 30 July 2019 17:53:01 
+  verbose: Creating image package. 
+  verbose: Azure Sphere application image package written. 
+  verbose: Appending metadata. 
+  verbose: Wrote metadata:
+    Section: Identity
+      Image Type:           Application
+      Component ID:         ef32ae5f-77f5-4729-b3c1-bf68020fb03f
+      Image ID:             d3527931-a18a-41f6-bbec-8b3dbcdc36db
+    Section: Signature
+      Signing Type:         ECDsa256
+      Cert:                 a8d5cc6958f48710140d7a26160fc1cfc31f5df0
+    Section: Debug
+      Image Name:           Mt3620AzureIoTHub1
+      Built On (UTC):       7/30/2019 5:53:02 PM
+      Built On (Local):     7/30/2019 1:53:02 PM
+    Section: Temporary Image
+      Remove image at boot: False
+      Under development:    True
+    Section: ABI Depends
+      Depends on:           ApplicationRuntime, version 2
+   
+  verbose: Packaging completed successfully. 
+  verbose: Output file is at: C:\Users\dzkaraka\Desktop\wordDir\azureSphere\azureSphereIoTHub_MergeWithADC\Mt3620AzureIoTHub1\Mt3620AzureIoTHub1\bin\ARM\Release\azureSphereIoTHub_MergeWithADC.imagepackage 
+  Command completed successfully in 00:00:00.7011157. 

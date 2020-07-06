@@ -1,0 +1,27 @@
+{
+  "name": "IoTHub_EventHub1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm index.js -- --hfc-logging true"
+  },
+  "dependencies": {
+    "jsrsasign": "^7.2.2",
+    "elliptic": "^6.2.3",
+    "js-sha3": "^0.7.0",
+    "winston": "^2.2.0",
+    "long": "^4.0.0",
+    "nconf": "^0.10.0",
+    "sjcl": "1.0.7",
+    "azure-keyvault": "^3.0.4",
+    "ms-rest-azure": "^2.6.0",
+    "base64url": "^3.0.1",
+    "azure-iothub": "^1.7.1",
+    "azure-iot-common": "^1.9.9"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

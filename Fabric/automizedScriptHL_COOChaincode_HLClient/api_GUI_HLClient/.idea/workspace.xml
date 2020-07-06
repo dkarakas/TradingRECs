@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c94f04da-3be1-4b88-ac35-de65f8f7f0b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../AzureSphereAlgorand/clients_NoPrivacy/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../AzureSphereAlgorand/clients_NoPrivacy/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AzureSphereAlgorand/clients_NoPrivacy/settledTransactions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../AzureSphereAlgorand/clients_NoPrivacy/settledTransactions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AzureSphereAlgorand/middlewareAPI_NoPrivacy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AzureSphereAlgorand/middlewareAPI_NoPrivacy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AzureSphereAlgorand/middlewareAPI_NoPrivacy/api_files/requestHandlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../AzureSphereAlgorand/middlewareAPI_NoPrivacy/api_files/requestHandlers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AzureSphereAlgorand/middlewareAPI_NoPrivacy/keys/prvKey" beforeDir="false" afterPath="$PROJECT_DIR$/../../AzureSphereAlgorand/middlewareAPI_NoPrivacy/keys/prvKey" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HLClient/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/../HLClient/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hl_client/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/hl_client/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chaincode/COOChaincode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chaincode/COOChaincode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chaincode/COOChaincode/lib/components/bids/bid.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chaincode/COOChaincode/lib/components/bids/bid.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="1395" column="4" selection-start-line="1395" selection-start-column="4" selection-end-line="1395" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hl_client/client.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="86" column="71" selection-start-line="86" selection-start-column="67" selection-end-line="86" selection-end-column="71" />
+              <folding>
+                <marker date="1573847666675" expanded="true" signature="4660:4664" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api_files/requestHandlers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3030">
+              <caret line="202" column="46" lean-forward="true" selection-start-line="202" selection-start-column="46" selection-end-line="202" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hl_client/query.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-599">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hl_client/invoke.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fetchListedCoins</find>
+      <find>fetchCoinsByUser</find>
+      <find>selectCoinsByUser</find>
+      <find>fetchlist</find>
+      <find>tat</find>
+      <find>Called a query on:</find>
+      <find>selectListingsByUser</find>
+      <find>cancel</find>
+      <find>allCoinsForProdSM</find>
+      <find>register u</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/workdir/rec-marketplace/ui/node_modules/antd/es/table/util.js" />
+        <option value="$PROJECT_DIR$/requestHandlers.js" />
+        <option value="$PROJECT_DIR$/query.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/hl_client/registerUser.js" />
+        <option value="$PROJECT_DIR$/hl_client/enrollAdmin.js" />
+        <option value="$PROJECT_DIR$/api_files/router.js" />
+        <option value="$PROJECT_DIR$/hl_client/query.js" />
+        <option value="$PROJECT_DIR$/api_files/server.js" />
+        <option value="$PROJECT_DIR$/hl_client/invoke.js" />
+        <option value="$PROJECT_DIR$/api_files/requestHandlers.js" />
+        <option value="$PROJECT_DIR$/hl_client/client.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-2" />
+    <option name="width" value="1837" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
+            <path>
+              <item name="api_GUI_HLClient" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="api_GUI_HLClient" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="api_files" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="api_GUI_HLClient" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="hl_client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="api_GUI_HLClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api_GUI_HLClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c94f04da-3be1-4b88-ac35-de65f8f7f0b6" name="Default Changelist" comment="" />
+      <created>1568399432097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568399432097</updated>
+      <workItem from="1568399433292" duration="4923000" />
+      <workItem from="1568426920305" duration="3000" />
+      <workItem from="1568426981231" duration="1698000" />
+      <workItem from="1568429406868" duration="2007000" />
+      <workItem from="1568475707688" duration="1601000" />
+      <workItem from="1568477328181" duration="1059000" />
+      <workItem from="1568479073093" duration="12740000" />
+      <workItem from="1568561719815" duration="25651000" />
+      <workItem from="1568993044284" duration="400000" />
+      <workItem from="1569089558757" duration="1020000" />
+      <workItem from="1569158549334" duration="22118000" />
+      <workItem from="1569379524972" duration="686000" />
+      <workItem from="1569553859922" duration="7188000" />
+      <workItem from="1570670059923" duration="340000" />
+      <workItem from="1571462601966" duration="680000" />
+      <workItem from="1571974433195" duration="97000" />
+      <workItem from="1572030153470" duration="74000" />
+      <workItem from="1573847148554" duration="5271000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="87556000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="83" y="25" width="1837" height="1055" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26074973" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14002089" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39200863" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24972437" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14002089" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.38012958" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/workdir/rec-marketplace/ui/node_modules/antd/es/table/util.js" />
+    <entry file="file://$PROJECT_DIR$/invoke.js" />
+    <entry file="file://$PROJECT_DIR$/requestHandlers.js" />
+    <entry file="file://$PROJECT_DIR$/query.js" />
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9725" column="4" selection-start-line="9725" selection-start-column="4" selection-end-line="9725" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hl_client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="6" selection-start-line="22" selection-start-column="5" selection-end-line="30" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hl_client/registerUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hl_client/enrollAdmin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_files/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_files/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hl_client/query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-599">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hl_client/invoke.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_files/requestHandlers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3030">
+          <caret line="202" column="46" lean-forward="true" selection-start-line="202" selection-start-column="46" selection-end-line="202" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="1395" column="4" selection-start-line="1395" selection-start-column="4" selection-end-line="1395" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hl_client/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="86" column="71" selection-start-line="86" selection-start-column="67" selection-end-line="86" selection-end-column="71" />
+          <folding>
+            <marker date="1573847666675" expanded="true" signature="4660:4664" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

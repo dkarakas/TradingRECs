@@ -1,0 +1,30 @@
+{
+    "name": "COOChainCode",
+    "version": "1.0.0",
+    "description": "CoO simple chaincode",
+    "main": "index.js",
+    "engines": {
+        "node": ">=8.4.0",
+        "npm": ">=5.3.0"
+    },
+    "scripts": {
+        "start": "fabric-chaincode-node start"
+    },
+    "engineStrict": true,
+    "author": "Dimcho Karakashev",
+    "license": "ISC",
+    "dependencies": {
+        "fabric-contract-api": "~1.4.0",
+        "fabric-shim": "~1.4.0",
+        "jsrsasign": "^7.2.2",
+        "elliptic": "^6.2.3",
+        "js-sha3": "^0.7.0",
+        "winston": "^2.2.0",
+        "long": "^4.0.0",
+        "nconf": "^0.10.0",
+        "sjcl": "1.0.7",
+        "base64url": "^3.0.1",
+        "ajv": "^6.10.2",
+        "async": "^3.1.0"
+    }
+}

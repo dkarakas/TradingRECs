@@ -1,0 +1,28 @@
+﻿  Azure Sphere Utility version 19.5.4.53731
+  Copyright (C) Microsoft Corporation. All rights reserved.
+   
+  Start time (UTC): Thursday, 15 August 2019 13:45:51 
+  verbose: Creating image package. 
+  verbose: Azure Sphere application image package written. 
+  verbose: Appending metadata. 
+  verbose: Wrote metadata:
+    Section: Identity
+      Image Type:           Application
+      Component ID:         ef32ae5f-77f5-4729-b3c1-bf68020fb03f
+      Image ID:             5875ac4f-55e5-41c8-89d7-c612a44c76d8
+    Section: Signature
+      Signing Type:         ECDsa256
+      Cert:                 a8d5cc6958f48710140d7a26160fc1cfc31f5df0
+    Section: Debug
+      Image Name:           Mt3620AzureIoTHub1
+      Built On (UTC):       8/15/2019 1:45:52 PM
+      Built On (Local):     8/15/2019 9:45:52 AM
+    Section: Temporary Image
+      Remove image at boot: False
+      Under development:    True
+    Section: ABI Depends
+      Depends on:           ApplicationRuntime, version 2
+   
+  verbose: Packaging completed successfully. 
+  verbose: Output file is at: C:\Users\dzkaraka\Desktop\Thesis_Folders\Cleaned Projects\azureSphereIoTHub_MergeWithADC\Mt3620AzureIoTHub1\Mt3620AzureIoTHub1\bin\ARM\Debug\azureSphereIoTHub_MergeWithADC.imagepackage 
+  Command completed successfully in 00:00:00.6897716. 

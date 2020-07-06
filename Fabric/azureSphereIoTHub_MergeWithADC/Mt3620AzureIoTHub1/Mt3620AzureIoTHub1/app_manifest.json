@@ -1,0 +1,22 @@
+{
+    "SchemaVersion": 1,
+    "Name": "Mt3620AzureIoTHub1",
+    "ComponentId": "ef32ae5f-77f5-4729-b3c1-bf68020fb03f",
+    "EntryPoint": "/bin/app",
+    "CmdArgs": [ "0ne00072331" ],
+    "Capabilities": {
+        "AllowedConnections": [ "global.azure-devices-provisioning.net", "SiriusIoTHub.azure-devices.net" ],
+        "AllowedTcpServerPorts": [],
+        "AllowedUdpServerPorts": [],
+        "Gpio": [ 8, 9, 10, 15, 16, 17, 18, 19, 20, 12, 13 ],
+        "Uart": [],
+        "I2cMaster": [],
+        "SpiMaster": [],
+        "WifiConfig": true,
+        "NetworkConfig": false,
+        "SystemTime": false,
+        "DeviceAuthentication": "6369e0c6-2dc5-4748-b7cb-c141606deda3",
+        "AllowedApplicationConnections": [ "005180bc-402f-4cb3-a662-72937dbcde47" ]
+    },
+    "ApplicationType": "Default"
+}
