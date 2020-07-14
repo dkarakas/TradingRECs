@@ -21,18 +21,23 @@ Also, download and install [Azure Sphere SDK](https://docs.microsoft.com/en-us/a
 ### Top-level directory layout
 
     .
-    ├── algorandNetwork                   # Files related to Algorand private network
-    ├── azureSphereApplication            # The Azure Sphere Application combined with wolfssl
-    ├── clientApplication                 # End-user interface with the system
-    ├── middlewareAPI                     # The API connecting the Azure Sphere and client application to Aglorand
-    │   ├── api_files                     # The API files
-    │   ├── certificates                  # Certificates related to TLS
-    │   ├── keys                          # The keys of the middleware API that represent energy company
-    │   └── spec                          # e2e tests for basic middleware API functionality
-    ├── scripts                           # Bash scripts that simplify manual testing
+    ├── Algorand                              # Files related to Algorand Implementation
+    │   ├── algorandNetwork                   # Files related to Algorand private network
+    │   ├── azureSphereApplication            # The Azure Sphere Application combined with wolfssl
+    │   ├── clientApplication                 # End-user interface with the system
+    │   ├── middlewareAPI                     # The API connecting the Azure Sphere and client application to Aglorand
+    │   │   ├── api_files                     # The API files
+    │   │   ├── certificates                  # Certificates related to TLS
+    │   │   ├── keys                          # The keys of the middleware API that represent energy company
+    │   │   ├── spec                          # e2e tests for basic middleware API functionality
+    │   └── └── scripts                       # Bash scripts that simplify manual testing
+    ├── Fabric                                # Files related to Fabric Implementation
+    │   ├── AzureFunctionSingTelemetry        # The deployed function on Azure Cloud
+    │   ├── AzureSphere_InterCommAndADC_RT    # Azure Sphere real-time app
+    │   ├── azureSphereIoTHub_MergeWithADC    # Azure Sphere high-level app
+    │   └── automizedScriptHL_COOChaincode_HLClient    # Scripts starting Hyperledger Fabric and HL Client
     ├── LICENSE
     └── README.md
-
 
 ### Quick Install
 
