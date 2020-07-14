@@ -3,8 +3,6 @@
 This is an implementation of a system for trading RECs in which end-users who trade RECs do not need to trust 
 energy producers or energy companies. The implementation is a proof of concept with simplifications such 
 as a single REC aggregator. 
-End-users that want to trade RECs are using node.JS application located in the clientApplication directory. 
-Currently, all transactions are submitted through the middlewareAPI. 
 
 ## Getting Started
 
