@@ -60,6 +60,9 @@ Set up an Algorand private network by running the command in the root directory 
 ./Algorand/algorandNetwork/start_network.sh
 ```
 
+For setting up Azure Sphere and deploying the application,
+ please follow [Microsoft's documentation](https://docs.microsoft.com/en-us/azure-sphere/install/overview)
+
 ## Testing
 Test the basic middleware API functionality using:
 ```
