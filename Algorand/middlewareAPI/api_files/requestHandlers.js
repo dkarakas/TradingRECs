@@ -166,26 +166,33 @@ let infoUpdate = async function(response, request, postData) {
             break;
         }
     }
+
     if(idOfDevice == -1){
         response.writeHead(401);
         response.body("Unauthorized smart meter!");
         response.end();
     }
 
+    let metadataUpdate = JSON.parse(postData);
+    if(config.auth_devices[i].PK_Master != metadataUpdate.PK_Master){
+	response.writeHead(401);
+	response.end();
+    }
 
     //Checking the signature of the update transaction
     // console.log(postData);
-    // let metadataUpdate = JSON.parse(postData);
-    // let metadataUpdateCopy = JSON.parse(postData);
-    // delete metadataUpdate.signature;
-    // let pubKeyDevice = ec.keyFromPublic(Buffer.from(metadataUpdate.PK_Master, 'base64').toString('hex'),'hex');
-    // if(!ec.verify(crypto.createHash('sha256').update(JSON.stringify(metadataUpdate)).digest(),
-    //     metadataUpdateCopy.signature, pubKeyDevice)){
-    //     console.log("Error! Signature of metadata update transaction failed verification!");
-    //     response.writeHead(404);
-    //     response.end();
-    //     return;
-    // }
+    let metadataUpdateCopy = JSON.parse(postData);
+    delete metadataUpdate.signature;
+    console.log(metadataUpdateCopy);
+    let signatureInfo = Buffer.from(metadataUpdateCopy.signature, "base64").toString("hex");
+    let pubKeyDevice = ec.keyFromPublic(Buffer.from(metadataUpdate.PK_Master, 'base64').toString('hex'),'hex');
+    if(!ec.verify(crypto.createHash('sha256').update(JSON.stringify(metadataUpdate).replace("{","").replace("}","")).digest(),
+         signatureInfo, pubKeyDevice)){
+	 console.log("Sig failed");
+         response.writeHead(404);
+         response.end();
+         return;
+    }
 
     //Signing update using REC aggregator key as an approval
     let dataToSend = JSON.parse(postData);

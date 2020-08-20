@@ -128,11 +128,71 @@ void createUpdateInfo(byte * req, ecc_key * key) {
 		return;
 	}
 
-	//TODO sing the request
 	req[0] = '\0';
-	strcat(req, "{\"type\":\"metadata\",\"PK_Master\":\"");
+	strcat(req, "\"type\":\"metadata\",\"PK_Master\":\"");
 	strcat(req, base64PubKey);//public base64 key
-	strcat(req, "\", \"gpsLatittude\":11,\"gpsLongtitude\":11}");
+	strcat(req, "\",\"gpsLatittude\":11,\"gpsLongtitude\":11");
+		
+	Sha256 sha256[1];
+	byte hashInfo[32];
+	
+	int ret = 0;
+
+	byte sig[1024] = "";
+	int sigSz = sizeof(sig);
+	byte sigBase64[1024] = "";
+	int sigSzBase64 = sizeof(sigBase64);
+
+	WC_RNG rng;
+	wc_InitRng(&rng);
+
+	int szToBeHashed = 0;
+	szToBeHashed = strlen(req);
+
+	ret = wc_InitSha256(sha256);
+	if(ret != 0) {
+		Log_Debug("wc_InitSha256 failed");
+	}
+	else {
+		wc_Sha256Update(sha256, req, szToBeHashed);
+		wc_Sha256Final(sha256, hashInfo);
+	}
+
+	ret = wc_ecc_sign_hash((byte *)&hashInfo, sizeof(hashInfo), sig, &sigSz, &rng, key);
+	if (ret != 0) {
+		Log_Debug("Error generating signature");
+	}
+
+	Log_Debug("Message to hash: ");
+	for (int i = 0; i < szToBeHashed; i++) {
+		Log_Debug("%c", req[i]);
+	}
+	Log_Debug("\n");
+	Log_Debug("Sha256: ");
+	for (int i = 0; i < 32; i++) {
+		Log_Debug("0x%02X ", ((byte *)hashInfo)[i]);
+	}
+	Log_Debug("\n");
+	
+	ret = Base64_Encode_NoNl(sig, sigSz, sigBase64, &sigSzBase64);
+	if (ret != 0) {
+		Log_Debug("Error Encoding the signature in Base64");
+	}
+	Log_Debug("Base64 signature encoded: ");
+	for (int i = 0; i < sigSzBase64; i++) {
+		Log_Debug("%c", sigBase64[i]);
+	}
+	Log_Debug("\n");
+
+	char temp[1024] = "";
+	//TODO: Fix this. Not Safe
+	strcat(temp, "{");
+	strcat(temp, req);
+	strcpy(req, temp);
+	strcat(req, ",\"signature\":\"");
+	strcat(req, sigBase64);
+	strcat(req, "\"}");
+	return req;
 }
 
 

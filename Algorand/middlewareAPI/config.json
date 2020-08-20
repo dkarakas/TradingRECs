@@ -16,10 +16,12 @@
   "private_key" : "keys/prvKey",
   "auth_devices" : [{
     "id" : "client1",
+    "PK_Master" : "",
     "owner": "",
     "ownerLocation" : "../algorandNetwork/ownerAddr.txt"
   }, {
     "id" : "c757e931a43a8c54123a73616aa8763cccad474f68d7659de7bb667a51f19fb2abce56ee977e55796498a4787563a3ea68b78f67336d0884f7dbfb9480d9eadc",
+    "PK_Master" : "BC9dYnujwQ/5IvkmzKdsTzQPMLX8B3+C1elru+DtfS+USX2CsA44LfsSvhpvadMcgOjKukvmolWKYA+rQIiCLgI=",
     "owner": "",
     "ownerLocation" : "../algorandNetwork/ownerAddr.txt"
   }]
