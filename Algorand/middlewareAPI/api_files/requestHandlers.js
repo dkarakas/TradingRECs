@@ -169,14 +169,19 @@ let infoUpdate = async function(response, request, postData) {
 
     if(idOfDevice == -1){
         response.writeHead(401);
-        response.body("Unauthorized smart meter!");
+        response.write("Unauthorized smart meter!");
         response.end();
+	return;
     }
 
     let metadataUpdate = JSON.parse(postData);
     if(config.auth_devices[i].PK_Master != metadataUpdate.PK_Master){
 	response.writeHead(401);
+        response.write("Smart meter identity is not added!");	
+	console.log("SM with identity " + metadataUpdate.PK_Master + " attempted to update its info");
+	console.log("If authorized, please add the SM to config!");
 	response.end();
+	return;
     }
 
     //Checking the signature of the update transaction
