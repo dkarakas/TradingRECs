@@ -8,6 +8,7 @@ const ec = new EC("secp256k1");
 const algo = require('algosdk');
 const util = require('../../api_files/util');
 const async = require('async');
+const config = require('../../config');
 
 var getParams = function (callback){
     var options = {
@@ -49,14 +50,14 @@ describe("Middleware API", function () {
     let bidTxid;
     let proposeSettleTxid;
 
-    beforeAll(function () {
-        //Reminder: the server should be started using npm start!
+    beforeAll(function (done) {
         const cryptoServer = crypto.createECDH('secp256k1');
         pubKey = cryptoServer.generateKeys('base64');
         prvKey = cryptoServer.getPrivateKey('base64');
-        ecdh.setPrivateKey(prvKey,'base64');
-        jasmine.DEFAULT_TIMEOUT_INTERVAL= 1000000;
-
+        ecdh.setPrivateKey(prvKey, 'base64');
+        jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000000;
+        config.auth_devices[0].PK_Master = pubKey;
+        fs.writeFileSync("config.json", JSON.stringify(config, null, 4));
 
         let mnemonicSeller = fs.readFileSync('../algorandNetwork/mnemonicSeller.txt', 'utf8').trim();
         sellerAccount = algo.mnemonicToSecretKey(mnemonicSeller);
@@ -64,7 +65,11 @@ describe("Middleware API", function () {
         buyerAccount = algo.mnemonicToSecretKey(mnemonicBuyer);
         let mnemonicEnergyCompany = fs.readFileSync('../algorandNetwork/mnemonicRECAggregator.txt', 'utf8').trim();
         energyCompanyAccount = algo.mnemonicToSecretKey(mnemonicEnergyCompany);
-    });
+        console.log("\nStart the middleware with npm start!\n");
+        setTimeout(function () {//give some time so that the metadata can be added to the blockchain
+            done();
+        }, 10000);
+        });
 
 
     it('should correctly accept smart meter registration ' +
@@ -76,9 +81,9 @@ describe("Middleware API", function () {
             "gpsLongtitude" : Math.floor(Math.random() * Math.floor(100))
         };
         //Sign Message
-        var hashReg = crypto.createHash('sha256').update(JSON.stringify(metadataUpdate)).digest();
-        var signature = ec.sign(hashReg, ecdh.getPrivateKey(), {canonical: true} );
-        metadataUpdate.signature = signature;
+        var hashReg = crypto.createHash('sha256').update(JSON.stringify(metadataUpdate).replace("{","").replace("}","")).digest();
+        var signature = ec.sign(hashReg, ecdh.getPrivateKey());
+        metadataUpdate.signature = Buffer.from(signature.toDER('hex'), 'hex').toString('base64');
 
         //Send a registration post request with X.509 certificate
         var options = {
@@ -132,7 +137,7 @@ describe("Middleware API", function () {
         let RECCopy = JSON.stringify(REC).replace("{","").replace("}","");
         let hashREC = crypto.createHash('sha256').update(RECCopy).digest();
         let signature = ec.sign(hashREC, ecdh.getPrivateKey(), {canonical: true} );
-        REC.sigDevice = signature;//TODO: Fix to to base64
+        REC.sigDevice = Buffer.from(signature.toDER('hex'), 'hex').toString('base64');
 
         sentREC = REC;
         //Send a registration post request with X.509 certificate
@@ -478,7 +483,7 @@ describe("Middleware API", function () {
         let RECCopy = JSON.stringify(REC).replace("{","").replace("}","");
         let hashREC = crypto.createHash('sha256').update(RECCopy).digest();
         let signature = ec.sign(hashREC, ecdh.getPrivateKey(), {canonical: true} );
-        REC.sigDevice = signature;
+        REC.sigDevice = Buffer.from(signature.toDER('hex'), 'hex').toString('base64');
 
         sentREC = REC;
         //Send a registration post request with X.509 certificate

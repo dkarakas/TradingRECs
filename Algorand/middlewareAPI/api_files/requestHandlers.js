@@ -188,12 +188,11 @@ let infoUpdate = async function(response, request, postData) {
     // console.log(postData);
     let metadataUpdateCopy = JSON.parse(postData);
     delete metadataUpdate.signature;
-    console.log(metadataUpdateCopy);
     let signatureInfo = Buffer.from(metadataUpdateCopy.signature, "base64").toString("hex");
     let pubKeyDevice = ec.keyFromPublic(Buffer.from(metadataUpdate.PK_Master, 'base64').toString('hex'),'hex');
     if(!ec.verify(crypto.createHash('sha256').update(JSON.stringify(metadataUpdate).replace("{","").replace("}","")).digest(),
          signatureInfo, pubKeyDevice)){
-	 console.log("Sig failed");
+         console.log("Sig failed");
          response.writeHead(404);
          response.end();
          return;
