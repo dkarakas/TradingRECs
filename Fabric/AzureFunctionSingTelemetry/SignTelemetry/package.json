@@ -8,7 +8,7 @@
     "start": "npm index.js -- --hfc-logging true"
   },
   "dependencies": {
-    "jsrsasign": "^7.2.2",
+    "jsrsasign": "^10.2.0",
     "elliptic": "^6.2.3",
     "js-sha3": "^0.7.0",
     "winston": "^2.2.0",
