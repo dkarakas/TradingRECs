@@ -16,7 +16,7 @@
     "dependencies": {
         "fabric-contract-api": "~1.4.0",
         "fabric-shim": "~1.4.0",
-        "jsrsasign": "^7.2.2",
+        "jsrsasign": "^10.5.25",
         "elliptic": "^6.2.3",
         "js-sha3": "^0.7.0",
         "winston": "^2.2.0",
